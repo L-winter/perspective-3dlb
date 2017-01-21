@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<metahttp-equiv="X-UA-Compatible"content="IE=edge,chrome=1">
+<metaname="renderer"content="webkit">
+  <script src="jquery-2.1.1.min.js"></script>
+  <script src="js.js"></script>
+  <title>3d轮播</title>
+</head>
+<style type="text/css">
+  #slider {
+    width: 320px;
+    margin:auto;
+    position: fixed;
+    z-index: 1;
+    top:40%;
+    left: 50%;
+    overflow: hidden;
+    margin-left: -160px;
+    cursor: move;
+  }
+</style>
+<body>
+<div id="slider">
+</div>
+
+
+</body>
+</html>
+
+<script type="text/javascript">
+$(function(){
+toucimage.toucfunc({
+  toucharea:"#slider",   //容器[触碰范围进行查看]
+  imgsrc:"shop/",        //图片路径
+  Imagenum:36,           //图片数量
+  imagename:"shoe-",    //图片前缀 ，商品命名请请按实例  ：shoe-1.jpg
+  speed:"中",            //灵敏度 。防止用户不小心触发
+  align:"鞋子",           //商品简名。防止图片未加载
+  format:"jpg",           //图片格式请统一
+});
+})
+</script>
